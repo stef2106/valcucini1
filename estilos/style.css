@@ -38,7 +38,7 @@ body {
 .hero-section {
     position: relative;
     height: 100vh;
-    background: url(/estilos/fondo.jpg) center/cover no-repeat;
+    background: url(fondo.jpg) center/cover no-repeat;
     color: #4a4a4a27;
     
 }
