@@ -56,7 +56,7 @@ body {
 }
 
 .hero-section {
-    background: url('estilos/fondo.jpg') no-repeat center center/cover;
+    background: url('../images/fondo.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -91,8 +91,19 @@ body {
 }
 .carousel-inner img {
     width: 100%;  /* Ajusta el ancho al 100% del contenedor */
-    height: 700px;  /* Ajusta la altura deseada (puedes cambiar el valor) */
+    height: 700px;  /* Ajusta la altura deseada */
       /* Recorta la imagen para llenar el contenedor sin deformarse */
+}
+.carousel-caption {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
 }
 #testimonios blockquote {
     font-size: 1.2rem;
@@ -118,14 +129,14 @@ body {
 
 .btn-brown {
     background-color: #8B5A2B;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
 }
 
 .btn-brown:hover {
-    background-color: #6E4220;
+    background-color: #b9f0c0;
 }
 #best-sellers {
     text-align: center;
