@@ -52,6 +52,34 @@ body {
     color: white;
 }
 
+/* ///////////////////modal //////////////////////// */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* ///////////////////otra //////////////////////// */
 .hero-section {
     background: url('../images/fondo.jpg') no-repeat center center/cover;
     height: 100vh;
