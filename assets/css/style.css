@@ -7,9 +7,10 @@ body {
 /* Estilos generales del navbar */
 .navbar {
     transition: background-color 0.3s ease-in-out;
-    background-color: rgba(255, 255, 255, 0.877); /* Translucidez inicial */
+    background-color: #FAF8EB; /* Translucidez inicial */
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
+    
 }
 .nav-link:hover {
     color: #A67C52;
@@ -19,11 +20,7 @@ body {
 }
 
 /* Logo centrado */
-.navbar-brand {
-    position: absolute;
-    left: 45%;
-    transform: translateX(-50%);
-}
+
 
 /* Ajustes para el navbar cuando colapsa */
 .navbar-toggler {
@@ -31,7 +28,7 @@ body {
 }
 
 .navbar-nav {
-    padding: 6px;
+    padding: 10px;
 }
 
 
