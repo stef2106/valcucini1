@@ -1,0 +1,23 @@
+.card{
+    background-color: rgb(239, 232, 232)  !important;
+    min-height: 450px; /* Ajusta este valor según necesites */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px 5px #cc8144 ;
+}
+
+.card img {
+    filter: brightness(1); /* Brillo normal */
+    transition: filter 0.3s ease-in-out; /* Suaviza la transición */
+}
+
+
+.card img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+}
+
+.letter-spacing {
+    letter-spacing: 3px; /* Espaciado entre letras */
+}
