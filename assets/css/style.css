@@ -19,8 +19,6 @@ body {
     background-color: #A67B5B; /* Color madera al hacer scroll */
 }
 
-/* Logo centrado */
-
 
 /* Ajustes para el navbar cuando colapsa */
 .navbar-toggler {
@@ -52,33 +50,57 @@ body {
     color: white;
 }
 
+/* DROPDOWN0 */
+.dropdown-menu {
+    background: #FAF8EB;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+/* Cuando el mouse pasa sobre el contenedor, muestra el menú */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
 /* ///////////////////modal //////////////////////// */
-.close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10;
+.modal-dialog {
+    max-width: 60%;
+    width: 90%;
 }
 
-.close-btn:hover {
-    color: #000;
-}
-
-.divider {
+.modal-content {
     display: flex;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(4, 182, 64, 0.904);
+    padding: 20px;
+    border: none;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.modal-content:hover {
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.651);
+}
+
+.modal-image {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 10px;
 }
 
-.divider::before,
-.divider::after {
-    content: "";
-    flex-grow: 1;
-    height: 1px;
-    background-color: #ccc;
+.imagen-modal {
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    animation: flotante 3s infinite ease-in-out;
 }
 
+@keyframes flotante {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
 /* ///////////////////otra //////////////////////// */
 .hero-section {
     background: url('../images/fondo.jpg') no-repeat center center/cover;
@@ -244,4 +266,10 @@ footer a:hover {
 
 .card:hover img {
     transform: scale(1.1);
+}
+
+
+input.form-control:focus {
+    border-color: #1E6D37; 
+    box-shadow: 0 0 5px #1E6D37; 
 }
