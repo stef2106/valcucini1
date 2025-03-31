@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     background-color: #F5F1E7;
     color: #4A4A4A;
+    padding-top: 70px;
 }
 
 /* Estilos generales del navbar */
 .navbar {
     transition: background-color 0.3s ease-in-out;
-    background-color: #FAF8EB; /* Translucidez inicial */
+    background-color: #faf8eba1; /* Translucidez inicial */
     backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
     
 }
 .nav-link:hover {
