@@ -1,41 +1,124 @@
 body {
-    background: #F5F1E7;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-}
-.container {
-    max-width: 900px;
-    margin-top: 50px;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    font-family: Arial, sans-serif;
 }
 
-.form-container {
-    background: rgba(201, 87, 87, 0.1);
-    padding: 30px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-}
-
-.btn-enviar {
-    background-color: #f4a93b;
-    color: #000;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 10px 15px;
-}
-.btn-enviar:hover {
-    background-color: #f39c12;
-}
-.icon-box {
-    background: rgba(255, 255, 255, 0.1);
+main {
     padding: 20px;
     border-radius: 10px;
+    background-color: black;
+    /*background-image: url('../img/contacto2.jpg');
+    background-repeat: no-repeat;  Evita que se repita */
+}
+
+
+/* Sección de contacto */
+.contact-section {
+    height: 100vh; /* Ocupa toda la pantalla */
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    justify-content: center;
+    background-image: url('../img/fondo.gif');
+    background-size: cover; /* Ajusta la imagen para que cubra el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    padding: 20px; /* Ajusta según lo necesites */
+    }
+
+/* Icono */
+.icono {
+    color: #28a745;
+    font-size: 50px;
+    animation: fadeInLeft 1s ease-in-out;
+    align-items: center;
+    justify-content: center;
 }
-.icon-box i {
-    font-size: 30px;
-    color: #f4a93b;
+
+/* Título */
+.contact-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #28a745; /* Verde */
+    margin-bottom: 15px;
+    animation: fadeInLeft 1s ease-in-out;
 }
+
+/* Texto */
+.contact-text {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    color: #ddd;
+    max-width: 400px;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+/* Formulario */
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+/* Input y Textarea */
+.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border: 1px solid #28a745; /* Verde */
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+}
+
+/* Botón animado */
+.btn-success {
+    background: #28a745;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background: #218838;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+}
+
+/* Animaciones */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
