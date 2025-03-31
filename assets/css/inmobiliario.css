@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #F5F1E7;
     color: #4A4A4A;
+    padding: 100px;
 }
 
 /* Estilos generales del navbar */
@@ -12,13 +13,14 @@ body {
     border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
     
 }
+
 .nav-link:hover {
     color: #A67C52;
 }
+
 .navbar.scrolled {
     background-color: #A67B5B; /* Color madera al hacer scroll */
 }
-
 
 /* Ajustes para el navbar cuando colapsa */
 .navbar-toggler {
@@ -28,7 +30,6 @@ body {
 .navbar-nav {
     padding: 10px;
 }
-
 
 .btn-brown {
     background-color: #A67C52;

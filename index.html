@@ -60,7 +60,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
 
                         <!-- Título -->
-                        <h2 class="fw-bold text-center">Registrarse</h2>
+                        <h2 class="fw-bold text-center text-success">Registrarse</h2>
                         <p class="text-muted text-center">Por favor, ingresa tus datos</p>
 
                         <!-- Formulario -->
@@ -90,14 +90,14 @@
                         <div class="text-center my-3">o</div>
 
                         <!-- Botón Google -->
-                        <button class="btn btn-outline-light w-100 border" onclick="registerWithGoogle()">
+                        <button class="btn text-dark  btn-outline-light w-100 border" onclick="registerWithGoogle()">
                             <i class="bi bi-google"></i> Registrarse con Google
                         </button>
 
                         <!-- Enlace para iniciar sesión -->
                         <p class="mt-3 text-muted text-center">
                             ¿Ya tienes una cuenta?
-                            <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Iniciar sesión</a>
+                            <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#LoginModal">Iniciar sesión</a>
                         </p>
                     </div>
 
@@ -112,8 +112,11 @@
         
     <!-- Modal de Inicio de Sesión -->
     <div class="modal fade" id="LoginModal" aria-hidden="true">
+       
         <div class="modal-dialog modal-lg">
+    
             <div class="modal-content text-center">
+                <button type="button" class="btn-close m-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 <div class="row g-0">
                     <!-- Sección de imagen y avatar -->
                     <div class="col-md-6 p-0 position-relative">
@@ -125,8 +128,9 @@
 
                     <!-- Sección de formulario -->
                     <div class="col-md-6 d-flex flex-column justify-content-center p-4">
+                        
                         <!-- Título -->
-                        <h2 class="fw-bold">¡Bienvenido de nuevo!</h2>
+                        <h2 class="fw-bold text-success">¡Bienvenido de nuevo!</h2>
                         <p class="text-muted">Inicia sesión en tu cuenta</p>
 
                         <!-- Formulario -->
@@ -140,25 +144,40 @@
                                 <input type="password" class="form-control" placeholder="Contraseña" required>
                             </div>
 
+            
+                        
+
+
+                            <button type="submit" class="btn btn-dark w-100"> Iniciar Sesión</button>
+
+
+                              <!-- Separador -->
+                        <div class="text-center my-3">o</div>
+
                             
                         <!-- Botón Google -->
-                        <button class="btn btn-outline-light w-100 border" onclick="loginWithGoogle()">
+                        <button class="btn text-dark btn-outline-light w-100 border" onclick="loginWithGoogle()">
                             <i class="bi bi-google"></i> Continuar con Google
                         </button>
 
 
-                            <div class="form-check mb-3 text-start">
-                                <input type="checkbox" class="form-check-input" id="remember-me">
-                                <label class="form-check-label" for="remember-me">Recuérdame</label>
-                            </div>
 
-                            <button type="submit" class="btn btn-primary w-100"> INICIAR SESIÓN</button>
+                        <p class="mt-3">
+                            <a href="#" class="text-success mt-3" data-bs-toggle="modal" data-bs-target="#LoginModal">Olvide mi contraseña</a>
+                        </p>
+
+
+                           
                         </form>
 
                         <!-- Enlace para registrarse -->
                         <p class="mt-3 text-muted">
-                            ¿No tienes una cuenta? <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#RegistroModal"> Regístrate</a>
+                            ¿No tienes una cuenta? <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#RegistroModal"> Regístrate</a>
+
                         </p>
+
+                        
+
                     </div>
                 </div>
             </div>
