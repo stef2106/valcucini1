@@ -1,4 +1,103 @@
 body {
+    background-image: url('../as/etsimmagenes//madera1.jpg');
+     /*background-repeat: no-repeat; Evita que se repita */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.avatar {
+    width: 70%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white;
+    box-shadow: 0px 5px 25px rgba(220, 209, 209, 0.827);
+}
+
+main {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    position: relative;
+}
+article {
+    flex: 1;
+    padding: 50px;
+}
+article h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f8f8f8;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+article p {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+.btn-learn {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+aside {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+}
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.btn-submit {
+    background: linear-gradient(to right, #26811f, #196913, #0e5508e7);
+    color: white;
+    width: 50%;
+    border-radius: 25px;
+    padding: 10px;
+    border: none;
+}
+
+/* Animaciones */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+body {
     font-family: Arial, sans-serif;
     background-color: #F5F1E7;
     color: #4A4A4A;
@@ -161,104 +260,4 @@ body {
 
 .btn-primary:hover {
     background-color: #1a252f;
-}
-
-/* Estilos generales */
-body {
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
-    font-family: Arial, sans-serif;
-}
-
-/* Sección de contacto */
-.contact-section {
-    height: 100vh; /* Ocupa toda la pantalla */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Título */
-.contact-title {
-    font-size: 2.3rem;
-    font-weight: bold;
-    color: #28a745; /* Verde */
-    margin-bottom: 15px;
-    animation: fadeInLeft 1s ease-in-out;
-}
-
-/* Texto */
-.contact-text {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    color: #ddd;
-    max-width: 400px;
-    animation: fadeInLeft 1.5s ease-in-out;
-}
-
-/* Formulario */
-.contact-form {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 30px;
-    width: 100%;
-    max-width: 500px;
-    animation: fadeInRight 1s ease-in-out;
-}
-
-/* Input y Textarea */
-.form-control {
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    border: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.form-control::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.form-control:focus {
-    background: rgba(255, 255, 255, 0.3);
-    color: #000;
-    border: 1px solid #28a745; /* Verde */
-    box-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
-}
-
-/* Botón animado */
-.btn-success {
-    background: #28a745;
-    border: none;
-    font-size: 1.2rem;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-success:hover {
-    background: #218838;
-    box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
-}
-
-/* Animaciones */
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }

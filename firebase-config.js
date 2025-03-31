@@ -24,7 +24,7 @@ window.loginWithGoogle = function() {
         .then((result) => {
             console.log("Usuario autenticado:", result.user);
             alert("Inicio de sesión exitoso");
-            window.location.href = "dashboard.html"; // Redirigir a otra página después de iniciar sesión
+            window.location.href = "cliente.html"; // Redirigir a otra página después de iniciar sesión
         })
         .catch((error) => {
             console.error("Error en autenticación:", error);
