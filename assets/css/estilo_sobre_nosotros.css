@@ -63,7 +63,6 @@ body {
 }
 
 
-
 /* ///////////////////modal //////////////////////// */
 .modal-dialog {
     max-width: 60%;
@@ -196,7 +195,16 @@ body {
 .buttons {
     margin-top: 20px;
 }
+.btn-whatsapp {
+    background-color: #51dfccbe !important;
+    border-color: #51dfccbe !important;
+    color: rgb(0, 0, 0) !important;
+}
 
+.btn-whatsapp:hover {
+    background-color: #3cbba4c0 !important;
+    border-color: #3cbba4c0 !important;
+}
 .btn {
     margin-right: 10px;
     padding: 10px 20px;
