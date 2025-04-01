@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #F5F1E7;
-    color: #4A4A4A;
+    background-color: #bb9d85;
+    color: #0f0f0f;
 }
 
 /* Estilos generales del navbar */
@@ -165,7 +165,7 @@ body {
 
 /* ///////////////////otra //////////////////////// */
 .hero-section {
-    background: url('../images/fondo.jpg') no-repeat center center/cover;
+    background: url('../images/header/fondo.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -198,6 +198,7 @@ body {
     position: relative;
     z-index: 1; /* Asegura que el contenido esté por encima del fondo opaco */
 }
+
 .carousel-inner img {
     width: 100%;  /* Ajusta el ancho al 100% del contenedor */
     height: 700px;  /* Ajusta la altura deseada */
@@ -243,9 +244,24 @@ body {
     border-radius: 5px;
     text-decoration: none;
 }
-
 .btn-brown:hover {
-    background-color: #b9f0c0;
+    background-color: #287467bd;
+    border-color: #51dfcc;
+}
+.shadow-custom {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+.rousel-inner img {
+    width: 100%;  /* Ajusta el ancho al 100% del contenedor */
+    height: 700px;  /* Ajusta la altura deseada */
+      /* Recorta la imagen para llenar el contenedor sin deformarse */
+}
+.bg-menta {
+    background-color: #ffffff !important; /* Verde menta */
+    color: rgba(0, 0, 0, 0.596) !important; /* Texto en blanco */
+}
+.bg-custom {
+    background-color: #ffffff !important;
 }
 #best-sellers {
     text-align: center;
@@ -279,8 +295,6 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
-
-
 
 .zoom-effect:hover {
     transform: scale(1.1);

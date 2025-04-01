@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #F5F1E7;
+    background-color: #b89878;
     color: #4A4A4A;
     padding: 100px;
 }
@@ -8,18 +8,18 @@ body {
 /* Estilos generales del navbar */
 .navbar {
     transition: background-color 0.3s ease-in-out;
-    background-color: #FAF8EB; /* Translucidez inicial */
+    background-color: #faf8eb5e; /* Translucidez inicial */
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
     
 }
 
 .nav-link:hover {
-    color: #A67C52;
+    color: #b89878;
 }
 
 .navbar.scrolled {
-    background-color: #A67B5B; /* Color madera al hacer scroll */
+    background-color: #b89878; /* Color madera al hacer scroll */
 }
 
 /* Ajustes para el navbar cuando colapsa */
@@ -32,28 +32,28 @@ body {
 }
 
 .btn-brown {
-    background-color: #A67C52;
+    background-color: #b89878;
     color: white;
     border: none;
 }
 
 .btn-brown:hover {
-    background-color: #8B5E3B;
+    background-color: #b89878;
 }
 
 .btn-outline-brown {
-    border: 2px solid #A67C52;
-    color: #A67C52;
+    border: 2px solid #b89878;
+    color: #b89878;
 }
 
 .btn-outline-brown:hover {
-    background-color: #A67C52;
+    background-color: #b89878;
     color: white;
 }
 
 /* DROPDOWN0 */
 .dropdown-menu {
-    background: #FAF8EB;
+    background: #b89878;
     padding: 10px;
     box-shadow: 0 3px 10px rgb(0, 0, 0);
 }
@@ -75,7 +75,7 @@ body {
     display: flex;
     max-width: 800px;
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(4, 182, 64, 0.904);
+    box-shadow: 0px 4px 10px #51dfcc;
     padding: 20px;
     border: none;
     transition: box-shadow 0.5s ease-in-out;
@@ -165,7 +165,7 @@ body {
 }
 
 .card{
-    background-color: rgb(239, 232, 232)  !important;
+    background-color: #b89878 !important;
     min-height: 0px; /* Ajusta este valor según necesites */
     transition: box-shadow 0.3s ease-in-out;
 }
@@ -174,7 +174,7 @@ body {
     text-wrap: balance;  /* Distribuye el texto de manera estética */
 }
 .card:hover {
-    box-shadow: 0px 0px 15px 5px #cc8144 ;
+    box-shadow: 0px 0px 15px 5px #287467bd ;
 }
 
 .card img {

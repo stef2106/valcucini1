@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #F5F1E7;
+    background-color: #ffffff;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@ body {
     display: flex;
     max-width: 800px;
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(4, 182, 64, 0.904);
+    box-shadow: 0px 4px 10px #51dfcc;
     padding: 20px;
     border: none;
     transition: box-shadow 0.5s ease-in-out;
@@ -109,7 +109,7 @@ body {
 /* Estilos del modal */
 .modal-content {
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.651);
     overflow: hidden;
 }
 
@@ -230,8 +230,8 @@ aside {
     color: rgba(255, 255, 255, 0.6);
 }
 .btn-submit {
-    background: linear-gradient(to right, #26811f, #196913, #0e5508e7);
-    color: white;
+    background: linear-gradient(to right, #51dfcc, #208174, #c7eee9e7);
+    color: rgb(0, 0, 0);
     width: 50%;
     border-radius: 25px;
     padding: 10px;
