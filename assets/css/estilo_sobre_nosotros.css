@@ -167,7 +167,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #bb9d85;
     width: 100vw;
     height: 100vh;
     padding: 40px;
@@ -179,15 +179,17 @@ body {
     flex: 1;
     padding: 20px;
     animation: slideInLeft 1.5s ease-out;
+    text-align: center;
 }
 
 .about-text h2 {
     font-size: 3rem;
-    color: #222;
+    color: #ffffff;
+    text-align: center;
 }
 
 .about-text p {
-    color: #555;
+    color: #ffffff;
     font-size: 1.5rem;
     line-height: 2;
 }
@@ -214,6 +216,16 @@ body {
 
 .btn:hover {
     transform: scale(1.1);
+}
+.btn-explora {
+    background-color: white !important;
+    border: 2px solid #3cbba4c0 !important;
+    color: black !important;
+}
+
+.btn-explora:hover {
+    background-color: #3cbba4c0 !important;
+    color: white !important;
 }
 
 /* Imagen y elementos visuales */
@@ -305,4 +317,7 @@ body {
     .explore-item {
         margin-bottom: 15px;
     }
+}
+.about-video {
+    border-radius: 20px;
 }
