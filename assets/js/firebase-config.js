@@ -1,6 +1,15 @@
-// Importar Firebase y los servicios necesarios
+// Importar Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
+import { 
+    getAuth, 
+    createUserWithEmailAndPassword, 
+    signInWithEmailAndPassword, 
+    signInWithPopup, 
+    GoogleAuthProvider, 
+    sendPasswordResetEmail,
+    onAuthStateChanged,
+    signOut
+} from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
 
 // Configuración de Firebase
 const firebaseConfig = {
@@ -12,48 +21,80 @@ const firebaseConfig = {
     appId: "1:772833916617:web:d8c39cfaad101f595ebf18",
     measurementId: "G-7R6HXR6CV2"
 };
+  
+
 
 // Inicializar Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
+
+
+
+// Función para registrar usuario
+document.getElementById("registroForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const email = document.getElementById("registroEmail").value;
+    const password = document.getElementById("registroPassword").value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+        .then(() => {
+            alert("Registro exitoso. Ahora puedes iniciar sesión.");
+            window.location.href = "cliente.html";
+        })
+        .catch((error) => {
+            alert("Error al registrarse: " + error.message);
+        });
+});
+
+
+// Función para iniciar sesión
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("loginPassword").value;
+
+    signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+            alert("Inicio de sesión exitoso.");
+            window.location.href = "cliente.html";
+        })
+        .catch((error) => {
+            alert("Error al iniciar sesión: " + error.message);
+        });
+});
+
+
 // Función para iniciar sesión con Google
 window.loginWithGoogle = function() {
     signInWithPopup(auth, provider)
-        .then((result) => {
-            console.log("Usuario autenticado:", result.user);
-            alert("Inicio de sesión exitoso");
-            window.location.href = "cliente.html"; // Redirigir a otra página después de iniciar sesión
+        .then(() => {
+            alert("Inicio de sesión con Google exitoso.");
+            window.location.href = "cliente.html";
         })
         .catch((error) => {
-            console.error("Error en autenticación:", error);
-            alert("Error al iniciar sesión con Google");
+            alert("Error al iniciar sesión con Google: " + error.message);
         });
 };
+
 
 // Función para registrar con Google (es igual a iniciar sesión)
 window.registerWithGoogle = function() {
     loginWithGoogle(); // Usa la misma función para registro
 };
 
-// Detectar si el usuario ya inició sesión
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-        document.getElementById("user-info").innerHTML = `
-            <p>Bienvenido, ${user.displayName}</p>
-            <img src="${user.photoURL}" width="50" class="rounded-circle">
-            <button class="btn btn-danger mt-2" onclick="logout()">Cerrar sesión</button>
-        `;
-    }
-});
 
-// Función para cerrar sesión
-window.logout = function() {
-    signOut(auth).then(() => {
-        alert("Sesión cerrada");
-        window.location.reload();
-    }).catch((error) => {
-        console.error("Error al cerrar sesión:", error);
-    });
-};
+// Función para recuperar contraseña
+document.getElementById("resetPasswordForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const email = document.getElementById("resetEmail").value;
+
+    sendPasswordResetEmail(auth, email)
+        .then(() => {
+            alert("Correo de recuperación enviado.");
+        })
+        .catch((error) => {
+            alert("Error al recuperar contraseña: " + error.message);
+        });
+});
