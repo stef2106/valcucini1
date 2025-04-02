@@ -179,7 +179,7 @@ body {
     text-wrap: balance;  /* Distribuye el texto de manera estética */
 }
 .card:hover {
-    box-shadow: 0px 0px 15px 5px #287467bd ;
+    box-shadow: 0px 0px 15px 5px #3cbba4c0 ;
 }
 
 .card img {
@@ -192,9 +192,20 @@ body {
     transform: scale(1.1); /* Aumenta el tamaño en un 10% */
 }
 
-.letter-spacing {
-    letter-spacing: 2px; /* Espaciado entre letras */
+.custom-button{
+    background-color: rgb(255, 255, 255);
+    border-color: #51dfccbe !important;
+    border-radius: 5px;
+    
 }
+
+.custom-button:hover{
+    background-color: #3cbba4c0;
+    border-color: #3cbba4c0;
+    box-shadow: 0px 0px 5px 2px white ;
+}
+
+/*///////// pie de pagina ////////*/
 
 footer a {
     text-decoration: none;

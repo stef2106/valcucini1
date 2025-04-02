@@ -2,11 +2,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #A67B5B;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     padding-top: 100px;
-
 }
 
 /* Estilos generales del navbar */
@@ -170,8 +167,8 @@ body {
 /****************contactanos *******************/
 
 .avatar2 {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -181,9 +178,8 @@ body {
     box-shadow: 0px 5px 25px rgba(220, 209, 209, 0.827);
 }
 
-main {
+div, .container {
     display: flex;
-    width: 80%;
     max-width: 1000px;
     position: relative;
     color: rgb(0, 0, 0);
@@ -191,6 +187,7 @@ main {
 article {
     flex: 1;
     padding: 50px;
+    position: relative;
 }
 article h1 {
     font-size: 3rem;
@@ -238,6 +235,8 @@ aside {
     border: none;
 }
 
+
+
 /* Animaciones */
 @keyframes fadeInLeft {
     from {
@@ -261,6 +260,27 @@ aside {
     }
 }
 
+
+/*///////// pie de pagina ////////*/
+
+footer a {
+    text-decoration: none;
+}
+
+footer .list-inline-item {
+    margin: 15 10px;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #8b5e3c; /* Verde menta */
+    color: black; /* Cambiar color del texto si es necesario */
+    padding: 20px 0;
+    text-align: center;
+}
 
 
 
