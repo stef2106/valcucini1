@@ -36,7 +36,7 @@
         // Importar Firebase correctamente
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
         import { getAuth, confirmPasswordReset } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
-    
+
         // Configuración de Firebase
         const firebaseConfig = {
             apiKey: "AIzaSyAY2Mp8Yocc69VA77IvLMw-claTtgYgBc8",
@@ -47,36 +47,40 @@
             appId: "1:772833916617:web:d8c39cfaad101f595ebf18",
             measurementId: "G-7R6HXR6CV2"
         };
-    
+
         // Inicializar Firebase
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-    
+        const app = firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+
         // Obtener código de restablecimiento desde la URL
         const urlParams = new URLSearchParams(window.location.search);
         const oobCode = urlParams.get("oobCode");
-    
-        console.log("Código de restablecimiento recibido:", oobCode);
-    
+
+        console.log("Código de restablecimiento:", oobCode); // Verificar si el código es válido
+
         // Manejar el cambio de contraseña
         document.getElementById("changePasswordForm").addEventListener("submit", function(event) {
             event.preventDefault();
             const newPassword = document.getElementById("newPassword").value;
-    
+
             if (!oobCode) {
                 alert("Código de restablecimiento no válido o expirado.");
                 return;
             }
-    
+
             // Cambiar la contraseña con Firebase
-            confirmPasswordReset(auth, oobCode, newPassword)
+            auth.confirmPasswordReset(oobCode, newPassword)
                 .then(() => {
-                    console.log("Contraseña cambiada correctamente.");
                     alert("Contraseña cambiada correctamente. Ahora puedes iniciar sesión.");
-                    window.location.href = "login.html"; // Redirigir al login
+
+                    // Cerrar sesión para evitar problemas con la sesión en caché
+                    return auth.signOut();
+                })
+                .then(() => {
+                    window.location.href = "index.html"; // Redirigir al login
                 })
                 .catch((error) => {
-                    console.error("Error al cambiar la contraseña:", error);
+                    console.error("Error al cambiar la contraseña:", error); // Mostrar errores en la consola
                     alert("Error: " + error.message);
                 });
         });
