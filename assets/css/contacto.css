@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #A67B5B;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -186,7 +186,7 @@ main {
     width: 80%;
     max-width: 1000px;
     position: relative;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 article {
     flex: 1;

@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #b89878;
-    color: #b89878;
+    color: #000000;
     padding-top: 70px;
 }
 
@@ -207,7 +206,7 @@ body {
     background-color: #3cbba4c0 !important;
     border-color: #3cbba4c0 !important;
 }
-.btn {
+.btn-whatsapp, .btn-explora {
     margin-right: 10px;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -317,7 +316,4 @@ body {
     .explore-item {
         margin-bottom: 15px;
     }
-}
-.about-video {
-    border-radius: 20px;
 }

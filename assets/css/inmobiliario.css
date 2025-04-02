@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #b89878;
-    color: #4A4A4A;
+   
     padding: 100px;
 }
 
@@ -164,6 +163,12 @@ body {
     background-color: #1a252f;
 }
 
+.bg-brown {
+    background-color: white !important;
+}
+
+
+/* CARDS */
 .card{
     background-color: #b89878 !important;
     min-height: 0px; /* Ajusta este valor según necesites */
@@ -190,3 +195,25 @@ body {
 .letter-spacing {
     letter-spacing: 2px; /* Espaciado entre letras */
 }
+
+footer a {
+    text-decoration: none;
+}
+
+footer .list-inline-item {
+    margin: 15 10px;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+
+footer {
+    background-color: #8b5e3c; /* Verde menta */
+    color: black; /* Cambiar color del texto si es necesario */
+    padding: 20px 0;
+    text-align: center;
+}
+
+
