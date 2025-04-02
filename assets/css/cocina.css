@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-   
-    padding: 100px;
+    padding-top: 70px;
 }
 
 /* Estilos generales del navbar */
@@ -183,19 +182,9 @@ body {
 }
 
 .card img {
-    width: 100%; /* Hace que la imagen se ajuste al ancho de la tarjeta */
-    height: auto; /* Mantiene la proporción */
-    max-height: 200px; /* Ajusta el máximo de altura según necesites */
+    max-height: 400px; /* Ajusta el máximo de altura según necesites */
     object-fit: cover; /* Ajusta la imagen sin distorsionarla */
 }
-
-.card-imge-top {
-    filter: brightness(1); /* Brillo normal */
-    transition: filter 0.3s ease-in-out; /* Suaviza la transición */
-    height: 50px;
-    width: 5px;
-}
-
 
 .card img:hover {
     transform: scale(1.1); /* Aumenta el tamaño en un 10% */
