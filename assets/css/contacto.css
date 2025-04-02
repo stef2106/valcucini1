@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #A67B5B;
     height: 100vh;
-    
     padding-top: 100px;
 }
 
@@ -128,7 +127,7 @@ body {
 
 /* Contenedor del avatar */
 .avatar-container {
-    position: relative;
+    position: absolute;
     top: 52%;
     left: 51%;
     background-color: #FAF8EB;
@@ -167,15 +166,15 @@ body {
 /****************contactanos *******************/
 
 .avatar2 {
-    width: 1300px; /* Aumenta el ancho */
-    height: 500px;
+    width: 1200px; /* Aumenta el ancho */
     justify-content: center;
     align-items: center;
     position: absolute;
     left: 50%;
+    filter: brightness(50%);
     transform: translateX(-50%);
     border: 3px solid white;
-    box-shadow: 0px 5px 25px rgba(220, 209, 209, 0.827);
+    box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.827);
 }
 
 .container.text-center.mb-5 {
@@ -188,15 +187,17 @@ article {
     flex: 1;
     padding: 50px;
     position: relative;
+    animation: fadeInLeft 1.5s ease-in-out;
+    margin-top: 100px;
 }
 article h1 {
     font-size: 3rem;
     font-weight: bold;
-    animation: fadeInLeft 1.5s ease-in-out;
+    
 }
 article p {
     margin-top: 10px;
-    animation: fadeInLeft 1.5s ease-in-out;
+    
 }
 .btn-learn {
     color: white;
@@ -214,6 +215,7 @@ aside {
     backdrop-filter: blur(10px);
     text-align: center;
     animation: fadeInLeft 1.5s ease-in-out;
+    margin-top: 100px;
 }
 .form-control2 {
     width: 100%; /* Que ocupen el ancho del contenedor */
@@ -285,6 +287,8 @@ footer {
     color: black; /* Cambiar color del texto si es necesario */
     padding: 20px 0;
     text-align: center;
+    position: relative;
+    margin-top: 200px;
 }
 
 
