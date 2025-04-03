@@ -73,10 +73,8 @@ body {
     display: flex;
     max-width: 800px;
     border-radius: 15px;
-    box-shadow: 0px 4px 10px #51dfcc;
     padding: 20px;
     border: none;
-    transition: box-shadow 0.5s ease-in-out;
 }
 
 .modal-content:hover {
@@ -192,17 +190,74 @@ body {
 }
 
 .custom-button{
+    color: #000;
     background-color: rgb(255, 255, 255);
-    border-color: #51dfccbe !important;
-    border-radius: 5px;
+    border-radius: 50px;
+    text-decoration: none;
     
 }
 
 .custom-button:hover{
     background-color: #3cbba4c0;
-    border-color: #3cbba4c0;
     box-shadow: 0px 0px 5px 2px white ;
 }
+
+
+/*///////// Modal categoria ////////*/
+
+
+/* Estilo general del modal */
+.modal-content-cate {
+    background: #b89878; /* Fondo blanco */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px; /* Ancho máximo */
+    margin: auto;
+}
+
+/* Cerrar botón */
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* Imagen dentro del modal */
+.modal-image-cate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; 
+}
+
+.modal-image-cate img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Texto dentro del modal */
+.modal-content-cate p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.modal-button{
+    background: #3cbba4c0;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.modal-button:hover{
+    background: #26685cc0;
+    border: none;
+    font-size: 1.2rem;
+}
+
+
 
 /*///////// pie de pagina ////////*/
 
@@ -236,4 +291,5 @@ footer a:hover {
     transform: scale(1.2);
     color: #654321; /* Un tono más oscuro al pasar el cursor */
 }
+
 
