@@ -165,34 +165,48 @@ body {
 }
 
 
-/* CARDS */
-.card{
-    background-color: #b89878 !important;
-    min-height: 0px; /* Ajusta este valor según necesites */
-    transition: box-shadow 0.3s ease-in-out;
+/*/////////////// CARDS /////////////////////*/
+
+/* Estructura de la tarjeta */
+.card {
+    background-color:#b89878 ;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
-.card-title {
-    white-space: normal; /* Permite que el texto se ajuste */
-    text-wrap: balance;  /* Distribuye el texto de manera estética */
+
+/* Imagen de la tarjeta */
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+
 .card:hover {
+    transform: scale(1.15);    
     box-shadow: 0px 0px 15px 5px #3cbba4c0 ;
 }
 
-.card img {
-    filter: brightness(1); /* Brillo normal */
-    transition: filter 0.3s ease-in-out; /* Suaviza la transición */
+/* Aumentar ligeramente el tamaño de la imagen en hover */
+.card:hover .card-img-top {
+    transform: scale(1.1);
 }
 
+/* Reducir el tamaño de las tarjetas inactivas */
+.card-grid:hover .card:not(:hover) {
+    transform: scale(0.9);
+}
 
-.card img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+/* Aplicar el desenfoque, brillo y saturación a las imágenes inactivas */
+.card-grid:hover .card:not(:hover) .card-img-top {
+    filter: brightness(0.5) saturate(1.0) contrast(1.2) blur(2px);
 }
 
 .custom-button{
     color: #000;
     background-color: rgb(255, 255, 255);
-    border-radius: 50px;
+    border-radius: 20px;
     text-decoration: none;
     
 }
@@ -202,13 +216,11 @@ body {
     box-shadow: 0px 0px 5px 2px white ;
 }
 
-
-/*///////// Modal categoria ////////*/
-
+/*/////////////// modals /////////////////////*/
 
 /* Estilo general del modal */
 .modal-content-cate {
-    background: #b89878; /* Fondo blanco */
+    background: #b89878; 
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -225,19 +237,66 @@ body {
 }
 
 
-/* Imagen dentro del modal */
+
+/* Contenedor de la imagen */
 .modal-image-cate {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px; 
+    overflow: hidden;
 }
 
+/* Imagen con efecto de aparición */
 .modal-image-cate img {
     max-width: 50%;
     height: auto;
     border-radius: 15px;
+    transform: scale(0.8);
+    animation: fadeInImage 1.5s cubic-bezier(0.08, 0.3, 0.41, 1.05) forwards;
 }
+
+/* Efecto de borde con iluminación */
+.modal-image-cate::before {
+    content: "";
+    position: absolute;
+    width: 53%;
+    height: 50%;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 30px #3cbba4c0;
+    opacity: 0;
+    animation: glowBorder 2.5s cubic-bezier(0.08, 0.3, 0.41, 1.05) forwards;
+}
+
+/* Animación de la imagen */
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animación del borde iluminado */
+@keyframes glowBorder {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.descripcion-producto{
+    background-color: #fde9d7f0;
+}
+
+
+
 
 /* Texto dentro del modal */
 .modal-content-cate p {

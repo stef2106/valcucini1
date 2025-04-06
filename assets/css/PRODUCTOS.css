@@ -61,8 +61,6 @@ body {
     display: block;
 }
 
-
-
 /* ///////////////////modal //////////////////////// */
 .modal-dialog {
     max-width: 60%;
@@ -73,7 +71,7 @@ body {
     display: flex;
     max-width: 800px;
     border-radius: 15px;
-    box-shadow: 0px 4px 10px #51dfcc;
+    box-shadow: 0px 4px 10px rgba(4, 182, 64, 0.904);
     padding: 20px;
     border: none;
     transition: box-shadow 0.5s ease-in-out;
@@ -161,51 +159,51 @@ body {
 .btn-primary:hover {
     background-color: #1a252f;
 }
-
 .bg-brown {
     background-color: white !important;
 }
 
-/* ////////////////producto ///////////////////////////*/
 
+
+/* ///////////////////modal //////////////////////// */
+/* === Estilos del Contenedor General === */
 .container-producto {
     display: flex;
     max-width: 80%;
-    max-height: auto;
     margin: 50px auto;
-    background: #3cbba4c0;
+    background: linear-gradient(to right, #c7eee9e7, #60e1d0, #3cbba4c0);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Imagen del producto centrada */
 .product-image {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
     max-width: 60%;
-    max-height: auto;
 }
 
-
-
+/* Detalles del producto */
 .product-details {
     flex: 1;
     padding-left: 20px;
 }
 
 .btn-link {
-    text-decoration: none; /* Quita el subrayado */
-    color: #000000; /* Color del texto */
+    text-decoration: none;
+    color: #000000;
     padding: 10px 15px;
     border: 2px solid #000000;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
-    margin-left: 0%;
+    margin-left: 80%;
 }
-.btn-link:hover{
+
+.btn-link:hover {
     color: #000000;
-    background-color: #ffffff;
+    background-color: #fffffff0;
     border: 2px solid #9a7e62;
 }
 
@@ -215,7 +213,7 @@ h1 {
 }
 
 ul li {
-    margin-bottom: 10px; /* Espaciado entre elementos */
+    margin-bottom: 10px;
 }
 
 .calificacion {
@@ -236,21 +234,9 @@ ul li {
     margin-bottom: 13px;
 }
 
-/* Cerrar botón */
-.product-details {
-    position: relative; /* Necesario para que el btn-close se posicione correctamente */
-    padding: 20px;
-}
-
-/* Botón de cierre alineado arriba a la derecha */
-.btn-close-cate {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10; /* Asegura que esté por encima del contenido */
-}
+/* Botón de WhatsApp */
 .btn-whatsapp {
-    background-color: #ffffff !important;
+    background-color: #fffffff0 !important;
     border-color: #3cbba4c0 !important;
     color: rgb(0, 0, 0) !important;
 }
@@ -259,4 +245,51 @@ ul li {
     background-color: #21806eb9 !important;
     border-color: #21806eb9 !important;
 }
+
+/* === Pixelated Image Card (Transición de Imagenes) === */
+.pixelated-image-card {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Ajusta según sea necesario */
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pixelated-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+    display: block;
+}
+
+.top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    z-index: 2;
+}
+
+.bottom-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
 
