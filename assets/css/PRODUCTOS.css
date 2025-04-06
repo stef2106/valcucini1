@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     padding-top: 70px;
+    color: #0f0f0f;
 }
 
 /* Estilos generales del navbar */
@@ -11,13 +12,15 @@ body {
     border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
     
 }
-
 .nav-link:hover {
-    color: #b89878;
+    color: #ffffff;
+}
+.navbar.scrolled {
+    background-color: #A67B5B; /* Color madera al hacer scroll */
 }
 
-.navbar.scrolled {
-    background-color: #b89878; /* Color madera al hacer scroll */
+.navbar-nav.me-auto {
+    font-size: 20px;
 }
 
 /* Ajustes para el navbar cuando colapsa */
@@ -29,29 +32,30 @@ body {
     padding: 10px;
 }
 
+
 .btn-brown {
-    background-color: #b89878;
+    background-color: #A67C52;
     color: white;
     border: none;
 }
 
 .btn-brown:hover {
-    background-color: #b89878;
+    background-color: #8B5E3B;
 }
 
 .btn-outline-brown {
-    border: 2px solid #b89878;
-    color: #b89878;
+    border: 2px solid #A67C52;
+    color: #A67C52;
 }
 
 .btn-outline-brown:hover {
-    background-color: #b89878;
+    background-color: #A67C52;
     color: white;
 }
 
 /* DROPDOWN0 */
 .dropdown-menu {
-    background: #b89878;
+    background: #FAF8EB;
     padding: 10px;
     box-shadow: 0 3px 10px rgb(0, 0, 0);
 }
@@ -60,6 +64,8 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+
 
 /* ///////////////////modal //////////////////////// */
 .modal-dialog {
@@ -162,7 +168,6 @@ body {
 .bg-brown {
     background-color: white !important;
 }
-
 
 
 /* ///////////////////modal //////////////////////// */
