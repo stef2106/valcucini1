@@ -224,6 +224,40 @@ button{
     z-index: 1; /* Asegura que el contenido esté por encima del fondo opaco */
 }
 
+/*///////////// Descuentos ////////////////////*/
+  /* Modal centrado*/
+  .modal-dialog.modal-attention {
+    margin: auto;
+    max-width: 600px;
+  }
+  
+  .modal-content {
+    border-radius: 12px;
+  }
+
+  /* Imagen con efecto de aparición */
+.carousel-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transform: scale(0.8);
+    animation: fadeInImage 1.5s cubic-bezier(0.08, 0.3, 0.41, 1.05) forwards;
+}
+
+/* Animación de la imagen */
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*///////////// carrucel ////////////////////*/
+
 .carousel-inner img {
     width: 100%;  /* Ajusta el ancho al 100% del contenedor */
     height: 700px;  /* Ajusta la altura deseada */
@@ -381,37 +415,6 @@ button{
 }
 
 
-/*///////////// Descuentos ////////////////////*/
-  /* Modal centrado*/
-  .modal-dialog.modal-attention {
-    margin: auto;
-    max-width: 600px;
-  }
-  
-  .modal-content {
-    border-radius: 12px;
-  }
-
-  /* Imagen con efecto de aparición */
-.carousel-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    transform: scale(0.8);
-    animation: fadeInImage 1.5s cubic-bezier(0.08, 0.3, 0.41, 1.05) forwards;
-}
-
-/* Animación de la imagen */
-@keyframes fadeInImage {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
 
 
 /*///////////// Footer ////////////////////*/
