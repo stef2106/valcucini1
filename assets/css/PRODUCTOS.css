@@ -187,7 +187,16 @@ button{
     font-family: 'Viga', sans-serif;
 }
 
-
+/*///////////// modal registro obligatorio ////////////////////*/
+  /* Modal centrado*/
+  .modal-dialog.modal-attention {
+    margin: auto;
+    max-width: 600px;
+  }
+  
+  .modal-content {
+    border-radius: 12px;
+  }
 
 
 /* === Estilos del Contenedor General === */
