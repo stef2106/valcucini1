@@ -233,7 +233,7 @@ button{
 }
 
 .custom-button:hover{
-    background-color: #3cbba4c0;
+    background-color: #287467bd;
     box-shadow: 0px 0px 5px 2px white ;
 }
 
@@ -328,13 +328,13 @@ button{
 }
 
 .modal-button{
-    background: #3cbba4c0;
+    background: #287467bd;
     border: none;
     font-size: 1.2rem;
 }
 
 .modal-button:hover{
-    background: #26685cc0;
+    background: #3cbba4c0;
     border: none;
     font-size: 1.2rem;
 }
