@@ -205,6 +205,24 @@ body {
     z-index: 1; /* Asegura que el contenido esté por encima del fondo opaco */
 }
 
+/*///////////// Descuentos ////////////////////*/
+  /* Modal centrado*/
+  .modal-dialog.modal-attention {
+    margin: auto;
+    max-width: 600px;
+  }
+  
+  .modal-content {
+    border-radius: 12px;
+  }
+
+
+
+
+
+
+
+/*///////////// portafolio ////////////////////*/
 .carousel-inner img {
     width: 100%;  /* Ajusta el ancho al 100% del contenedor */
     height: 700px;  /* Ajusta la altura deseada */
