@@ -170,7 +170,24 @@ body {
     background-color: white !important;
 }
 
-/*/////////////// CARDS /////////////////////*/
+/*///////////////////////////////////////// letra /////////////////////////////////////////////*/
+
+h1{
+    font-family: 'Roboto Slab', serif;
+}
+
+h6{
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+}
+
+button{
+    font-family: 'Viga', sans-serif;
+}
+/*///////////////////////////////////////// CARDS /////////////////////////////////////////////*/
 
 /* Estructura de la tarjeta */
 .card {
@@ -233,6 +250,8 @@ body {
     max-width: 600px; /* Ancho máximo */
     margin: auto;
 }
+
+
 
 /* Cerrar botón */
 .btn-close {

@@ -170,7 +170,27 @@ body {
     background-color: white !important;
 }
 
-/* CARDS */
+
+
+
+/*///////////////////////////////////////// letra /////////////////////////////////////////////*/
+
+h1{
+    font-family: 'Roboto Slab', serif;
+}
+
+h6{
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+}
+
+button{
+    font-family: 'Viga', sans-serif;
+}
+/* /////////////////////////////////////CARDS //////////////////////////////////////////////*/
 /* Estructura de la tarjeta */
 .card {
     background-color: #ebe3d8;
