@@ -268,13 +268,13 @@ ul li {
 }
 
 /* Botón de WhatsApp */
-.btn-whatsapp {
+.btn-formu {
     background-color: #fffffff0 !important;
     border-color: #3cbba4c0 !important;
     color: rgb(0, 0, 0) !important;
 }
 
-.btn-whatsapp:hover {
+.btn-formu:hover {
     background-color: #21806eb9 !important;
     border-color: #21806eb9 !important;
 }
