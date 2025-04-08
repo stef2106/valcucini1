@@ -311,6 +311,61 @@ body {
     width: 5%;
 }
 
+
+
+/*///////////// Descuentos ////////////////////*/
+.product.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    background-color: #fff;
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product.card:hover {
+    transform: scale(1.05);
+}
+
+.product.card img.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product.card:hover img.card-img-top {
+    transform: scale(1.1);
+}
+
+.card-body {
+    border-top: 1px solid #eee;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+
+/*///////////// Descuentos ////////////////////*/
+  /* Modal centrado*/
+  .modal-dialog.modal-attention {
+    margin: auto;
+    max-width: 600px;
+  }
+  
+  .modal-content {
+    border-radius: 12px;
+  }
+
+
+/*///////////// Footer ////////////////////*/
 footer a {
     text-decoration: none;
 }
@@ -339,33 +394,4 @@ footer {
 footer a:hover {
     transform: scale(1.2);
     color: #654321; /* Un tono más oscuro al pasar el cursor */
-}
-
-
-
-.card {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s; 
-}
-
-.card img {
-    width: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card:hover img {
-    transform: scale(1.1);
-}
-
-
-input.form-control:focus {
-    border-color: #1E6D37; 
-    box-shadow: 0 0 5px #1E6D37; 
 }
