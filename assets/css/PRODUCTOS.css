@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #bb9d85;
     padding-top: 70px;
     color: #0f0f0f;
@@ -171,6 +170,26 @@ body {
 }
 
 /* ///////////////////productos //////////////////////// */
+
+
+/*///////////////////////////////////////// letra /////////////////////////////////////////////*/
+
+h1 h6 h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+p li {
+    font-family: 'Manrope', sans-serif;
+}
+
+button{
+    font-family: 'Viga', sans-serif;
+}
+
+
+
+
 /* === Estilos del Contenedor General === */
 .container-producto {
     display: flex;
