@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #bb9d85;
     color: #0f0f0f;
     padding-top: 70px;
 }
@@ -173,7 +174,7 @@ body {
 
 /* Estructura de la tarjeta */
 .card {
-    background-color:#b89878 ;
+    background-color:#ebe3d8 ;
     position: relative;
     overflow: hidden;
     border-radius: 10px;

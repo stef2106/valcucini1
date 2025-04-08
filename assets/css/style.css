@@ -313,18 +313,20 @@ body {
 
 
 
-/*///////////// Descuentos ////////////////////*/
+/*///////////// mas vendidos ////////////////////*/
 .product.card {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
     background-color: #fff;
-    width: 250px;
+    width: 300px;
+    height: 320px; /* Altura uniforme para todas */
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .product.card:hover {
@@ -332,8 +334,10 @@ body {
 }
 
 .product.card img.card-img-top {
-    height: 200px;
-    object-fit: cover;
+    height: 220px;               /* Altura fija para todas las imágenes */
+    width: 100%;
+    object-fit: cover;           /* Recorta sin deformar */
+    object-position: center;     /* Centra la imagen */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -342,14 +346,19 @@ body {
 }
 
 .card-body {
-    border-top: 1px solid #eee;
-    background-color: #fff;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .card-title {
     font-size: 0.95rem;
     font-weight: 600;
     color: #333;
+    text-align: center;
+    margin: 0;
 }
 
 
