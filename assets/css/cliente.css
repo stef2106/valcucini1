@@ -99,7 +99,7 @@ body {
 
 /* Botón "SALIR" con color rojo */
 .dropdown-item.logout {
-    color: #dc3545;
+    color: #d9172a;
 }
 
 .dropdown-item.logout:hover {

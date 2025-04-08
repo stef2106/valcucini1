@@ -1,0 +1,259 @@
+body {
+    background-color: #bb9d85;
+    padding-top: 70px;
+    color: #0f0f0f;
+}
+
+/* Estilos generales del navbar */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #faf8eb5e; /* Translucidez inicial */
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.938); /* Borde ligero translúcido */
+    
+}
+.nav-link:hover {
+    color: #ffffff;
+}
+.navbar.scrolled {
+    background-color: #A67B5B; /* Color madera al hacer scroll */
+}
+
+.navbar-nav.me-auto {
+    font-size: 20px;
+}
+
+/* Ajustes para el navbar cuando colapsa */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav {
+    padding: 10px;
+}
+
+
+.btn-brown {
+    background-color: #A67C52;
+    color: white;
+    border: none;
+}
+
+.btn-brown:hover {
+    background-color: #8B5E3B;
+}
+
+.btn-outline-brown {
+    border: 2px solid #A67C52;
+    color: #A67C52;
+}
+
+.btn-outline-brown:hover {
+    background-color: #A67C52;
+    color: white;
+}
+
+/* DROPDOWN0 */
+.dropdown-menu {
+    background: #FAF8EB;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+/* Cuando el mouse pasa sobre el contenedor, muestra el menú */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* ///////////////////menu icono //////////////////////// */
+
+/* Ícono de usuario en el navbar */
+.user-dropdown a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.user-dropdown a:hover {
+    color: #000;
+}
+
+/* Dropdown personalizado */
+.dropdown-menu {
+    min-width: 180px;
+    box-shadow: 0px 4px 10px rgba(75, 72, 72, 0.8);
+}
+
+/* Estilos para los ítems del dropdown */
+.dropdown-item {
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Separador dentro del dropdown */
+.dropdown-divider {
+    margin: 8px 0;
+}
+
+/* Botón "SALIR" con color rojo */
+.dropdown-item.logout {
+    color: #d9172a;
+}
+
+.dropdown-item.logout:hover {
+    background-color: #f8d7da;
+}
+
+
+
+/* ///////////////////productos //////////////////////// */
+
+
+/*///////////////////////////////////////// letra /////////////////////////////////////////////*/
+
+h1 h6 h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+p li {
+    font-family: 'Manrope', sans-serif;
+}
+
+button{
+    font-family: 'Viga', sans-serif;
+}
+
+
+
+
+/* === Estilos del Contenedor General === */
+.container-producto {
+    display: flex;
+    max-width: 80%;
+    margin: 50px auto;
+    background: linear-gradient(to right, #c7eee9e7, #60e1d0, #3cbba4c0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del producto centrada */
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+}
+
+/* Detalles del producto */
+.product-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 80%;
+}
+
+.btn-link:hover {
+    color: #000000;
+    background-color: #fffffff0;
+    border: 2px solid #9a7e62;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.calificacion {
+    font-size: 18px;
+}
+
+.specs {
+    margin-top: 20px;
+}
+
+.specs h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.specs li {
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+/* Botón de WhatsApp */
+.btn-whatsapp {
+    background-color: #fffffff0 !important;
+    border-color: #3cbba4c0 !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.btn-whatsapp:hover {
+    background-color: #21806eb9 !important;
+    border-color: #21806eb9 !important;
+}
+
+/* === Pixelated Image Card (Transición de Imagenes) === */
+.pixelated-image-card {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Ajusta según sea necesario */
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pixelated-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+    display: block;
+}
+
+.top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    z-index: 2;
+}
+
+.bottom-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
