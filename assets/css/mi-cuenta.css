@@ -86,20 +86,3 @@ aside img:hover {
     box-shadow: 0 5px 20px rgba(132, 131, 131, 0.701);
 }
 
-
-/* ///////////////////footer //////////////////////// */
-footer {
-    background-color: #A67C52; /* Color beige claro */
-    color: #5a5a5a;
-}
-
-footer a {
-    color: #8b5e3c; /* Color madera */
-    font-size: 1.5rem;
-    transition: transform 0.2s ease-in-out;
-}
-
-footer a:hover {
-    transform: scale(1.2);
-    color: #654321; /* Un tono más oscuro al pasar el cursor */
-}
