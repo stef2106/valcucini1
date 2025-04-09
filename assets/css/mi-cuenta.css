@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F5F1E7;
+    
+    background-color: #bb9d85;
     color: #4A4A4A;
     padding-top: 100px;
 }
@@ -63,6 +63,26 @@ body {
     display: block;
 }
 
+/* //////////////////////////////////////////letra ////////////////////////////////////////////// */
+h1{
+    font-family: 'Roboto Slab', serif;
+    color: #000;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+    color: #000;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+    color: #000;
+}
+
+button{
+    font-family: 'Viga', sans-serif;    
+    color: #000;
+}
 
 /* ///////////////////menu icono //////////////////////// */
 
@@ -113,28 +133,36 @@ body {
 .card {
     box-shadow: 0 5px 25px rgba(132, 131, 131, 0.701);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 20px ;
+    border-radius: 50px ;
+    background-color: #ffffff; 
+    border-color: #A67C52;
 }
 
 .card:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ebe3d8;
+}
+.border-infor{
+    color: #000;
+    border-color: #000000;
 }
 
 /* Botón Editar */
 .btn-dark {
-    background-color: #333;
+    background-color: #287467bd;
     transition: background-color 0.3s ease-in-out;
 }
 
 .btn-dark:hover {
-    background-color: rgba(4, 182, 64, 0.904);
+    background-color: #3cbba4c0;
 }
 
 /* Modal */
 .modal-content {
     border-radius: 10px;
     transition: box-shadow 0.3s ease-in-out;
+    background-color: #ebe3d8;
 }
 
 .modal-content:hover {
@@ -161,7 +189,7 @@ aside img:hover {
 
 /* ///////////////////footer //////////////////////// */
 footer {
-    background-color: #f5f5dc; /* Color beige claro */
+    background-color: #A67C52; /* Color beige claro */
     color: #5a5a5a;
 }
 
