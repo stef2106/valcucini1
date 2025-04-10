@@ -7,22 +7,18 @@ body {
 /* //////////////////////////////////////////letra ////////////////////////////////////////////// */
 h1{
     font-family: 'Roboto Slab', serif;
-    color: #000;
 }
 
 h2{
     font-family: 'Roboto Slab', serif;
-    color: #000;
 }
 
 p {
     font-family: 'Manrope', sans-serif;
-    color: #000;
 }
 
 button{
     font-family: 'Viga', sans-serif;    
-    color: #000;
 }
 
 /*///////////// Descuentos ////////////////////*/
@@ -134,4 +130,5 @@ button{
     text-align: center;
     margin: 0;
 }
+
 
