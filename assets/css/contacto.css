@@ -121,6 +121,12 @@ aside {
     }
 }
 
+@media (max-width: 768px) {
+    .avatar2 {
+        height: 1100px;
+    }
+}
+
 
 
 
