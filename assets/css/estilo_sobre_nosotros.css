@@ -1,12 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #0f0f0f;
-    padding-top: 100px;
-}
-
-
-
-/*////////////////// Contenedor principal /////////////////*/
+/* Contenedor principal */
 .about-section {
     display: flex;
     align-items: center;
@@ -42,10 +34,13 @@ body {
     margin-top: 20px;
 }
 
-
-.btn:hover {
-    transform: scale(1.1);
+.btn-explora {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
 }
+
 .btn-explora {
     background-color: white !important;
     border: 2px solid #3cbba4c0 !important;
@@ -109,8 +104,6 @@ body {
     height: auto;
     border-radius: 10px;
 }
-
-
 
 /* Animaciones */
 @keyframes fadeIn {
