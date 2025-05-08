@@ -1,6 +1,8 @@
 const productoId = 'producto456';
 const storageKey = `resenas_${productoId}`;
 
+
+// captura los datos 
 const reviewForm = document.getElementById('formResena');
 const ratingInput = document.getElementById('calificacion');
 const reviewText = document.getElementById('opinion');
